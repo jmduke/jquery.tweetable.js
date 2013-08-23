@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+</head>
+  <title>A totally dopeness tutorial</title>
+
+  <!-- Yeah, it's internal CSS.  What are you gonna do about it, punk? -->
+  <style type='text/css'>
+    body {
+      color: #333;
+    }
+
+    img {
+      margin: 2px;
+    }
+
+    .tweetable {
+      padding: 3px;
+      background-color: #e9ebe4;
+      color: #000;
+    }
+
+    .tweetable:after {
+      content: url('https://dev.twitter.com/sites/default/files/images_documentation/bird_gray_16.png');
+    }
+
+    .tweetable:hover {
+      background-color: #e2f1f9;
+    }
+
+    .tweetable:hover:after {
+      content: url('https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_16.png');
+    }
+  </style>
+
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+  <script src="http://www.minimalytics.com/scripts/jquery.js"></script>
+  <script src="./src/jquery.tweetable.js"></script>
+<body>
+
+  <h1>Hello, World!</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ante et nisl rutrum lobortis. Nulla ultricies diam justo, nec elementum ligula condimentum id. Donec volutpat risus in enim adipiscing euismod. Suspendisse sit amet porttitor libero, in hendrerit sapien. Pellentesque auctor quis sapien nec pulvinar. Nullam in mauris vitae elit commodo tincidunt quis eget eros. Ut bibendum diam sed tortor adipiscing pellentesque. Pellentesque vitae tincidunt nulla. Vivamus odio dolor, vehicula et eros vel, varius lacinia nulla. Cras scelerisque auctor elit, vel eleifend orci dignissim sed. 
+    <span data-tweetable>Man, this is such a dope little sentence.</span>
+    Nam dignissim, ante dapibus vestibulum laoreet, turpis sem adipiscing lectus, nec sollicitudin neque nisi lobortis sapien. Curabitur dui turpis, sodales non tincidunt at, sodales at sapien. Nunc nec risus at lacus accumsan faucibus id vitae sem. Aenean convallis urna posuere, tempus ipsum sed, imperdiet libero. Donec et feugiat mauris. Ut volutpat turpis rutrum interdum porta.
+  </p>
+
+  <p>
+    Etiam ut libero tincidunt, imperdiet lectus vel, tempor sem. Curabitur pulvinar, quam laoreet ornare viverra, felis ante interdum massa, suscipit molestie urna felis ac justo. Quisque eget purus ante. Nulla neque tortor, tempus laoreet nibh ut, vehicula posuere diam. Cras convallis tellus sed ligula fringilla commodo. 
+    <span data-tweetable="You didn't even believe me, did you?">Try clicking this!  It'll say something else!</span>Pellentesque sit amet rutrum nisi, et hendrerit diam. Ut dapibus elit ante, quis lobortis nunc ultrices ut. Suspendisse mattis nisi mi, in blandit sem ornare ut. Praesent dolor lacus, tempor in est eu, dapibus eleifend diam.
+  </p>
+
+  <script>
+    $(function () {
+
+      $('[data-tweetable]').tweetable({
+        via: 'justinmduke',
+      });
+
+    });
+  </script>
+</body>
+</html>
