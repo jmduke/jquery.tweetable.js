@@ -1,0 +1,25 @@
+{
+	"name": "tweetable",
+	"version": "v0.1.0",
+	"title": "jquery.tweetable.js",
+	"author": {
+		"name": "Justin Duke",
+		"email": "dukerson@gmail.com",
+		"url": "http://jmduke.net"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://choosealicense.com/licenses/mit/"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.71"
+	},
+	"description": "Make sentences and snippets easily tweetable for your users.",
+	"keywords": [
+		"twitter",
+		"sharing",
+		"social"
+	]
+}
