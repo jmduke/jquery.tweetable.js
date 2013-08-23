@@ -32,6 +32,7 @@ Options are pretty simple, and you can pass them as so:
 $('.awesome-text').tweetable({
 	via: 'justinmduke'
 });
+```
 
 The defaults:
 
