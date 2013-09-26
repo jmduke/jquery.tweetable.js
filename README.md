@@ -4,6 +4,8 @@ A simple li'l plugin that lets you make site content easily tweetable.
 
 Inspired (and by *inspired* I mean *I stole this*) from a recent [New York Times article](http://www.nytimes.com/2013/08/25/arts/television/the-god-of-snl-will-see-you-now.html?partner=rss&emc=rss&_r=0) doing the exact same thing.
 
+You can see a demo of the plugin in action [here](http://htmlpreview.github.io/?https://github.com/dukerson/jquery.tweetable.js/blob/master/test.html).
+
 ## Usage
 
 ### Dependencies
