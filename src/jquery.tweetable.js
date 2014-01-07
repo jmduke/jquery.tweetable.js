@@ -72,10 +72,9 @@
 
       		// If the particular selector is 'blank', we default to the text within.
  			// Otherwise, we grab the value of the selector.
-	      	if ($e.attr($.tweetable.options.dataAttr) == "")
+ 		var tweetText = $e.attr($.tweetable.options.dataAttr);
+	      	if (tweetText == "" || tweetText === undefined)
 	    		var tweetText = $e.text();
-	    	else
-	    		var tweetText = $e.attr($.tweetable.options.dataAttr);
 
 	    	// Let's go ahead and be a stickler about enforcing that 140-char limit.
 	    	if (tweetText.length > 140) {
