@@ -76,9 +76,9 @@
 	      	if (tweetText == "" || tweetText === undefined)
 	    		var tweetText = $e.text();
 
-	    	// Let's go ahead and be a stickler about enforcing that 140-char limit.
-	    	if (tweetText.length > 140) {
-	    		console.error("That's, like, more than 140 characters.  Do you even *get* Twitter?")
+	    	// Let's go ahead and be a stickler about enforcing that 280-char limit.
+	    	if (tweetText.length > 280) {
+	    		console.error("That's, like, more than 280 characters.  Do you even *get* Twitter?")
 	    		return $e;
 	    	}
 
